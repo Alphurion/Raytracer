@@ -1,0 +1,65 @@
+Hello this is my personal style guide for C++
+
+----- Section 1: Names/Apperance -----
+
+
+* 2 Space for tab
+* Spaces after operators Example: (x + y) NOT (x+y)
+* Always enclose if blocks, and always open brace on own line
+* Line length limit: 100 characters
+
+* headers named .h
+
+Header Files = Snake_Case
+Classes =  PascalCase
+Variables = camelCase
+Functions = camelCase
+Constants = PascalCase 
+
+DO 
+int *ptr;
+NOT
+int* ptr;
+# Coding #
+Parameter Order should go from most important to least.
+One blank line between functions.
+
+Include Standard library, project headers, then third party libraries
+
+When writing a class, do
+class Bar
+{
+private:
+public: 
+};
+
+NOT
+
+class Bar
+{
+public:    
+};
+
+Use const and auto where possible.
+Always return explicitly.
+Avoid using exceptions where possible to avoid memory issues.
+
+Reserved Words:
+Theta: Used for angles
+x, y, z: Only for mathematical formula readability
+i, j, k: Loop indices
+
+# Comments #
+/*
+Include a TO DO list at the top of functions.
+For WIP files, include need to be done tasks, and update them as completed.
+*/
+
+/*
+One comment block for each function. 
+Use complete sentences.
+*/
+
+// Comment why something exists, not what it does
+// Space after single lined comments.
+// Use documentation comments for IDE tooltips
